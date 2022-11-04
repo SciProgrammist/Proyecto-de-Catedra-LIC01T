@@ -298,6 +298,10 @@ figure {
     text-decoration: underline;
 }
 
+#sub_Mesas{
+    display: none;
+}
+
 #mesas {
     margin-top: 20px;
     display: grid;
@@ -314,6 +318,7 @@ figure {
     border-radius: 15px;
     text-align: center;
     padding: 4%;
+    cursor: pointer;
 }
 
 #mesas p{

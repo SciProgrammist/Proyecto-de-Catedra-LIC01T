@@ -36,41 +36,93 @@
         </div>
     </nav>
     <section>
-        
-        <div class="container-fluid padding p-5">
-            <p class="text-center display-4">Reserva de Mesas</p>
-            <p class="display-6">Pasos para reservar:</p>
-            <ol>
-                <li>Ingrese su usuario y contraseña</li>
-                <li>...</li>
-            </ol>
 
-            <form>
-                <input type="date" class="form-control">
+        <div class="container-fluid padding p-5  ">
+            <p class="text-center display-4">Reserva de Mesas</p>
+
+            <form class="col-4">
+
+                <B>Pasos:</B>
+                <ol>
+                    <li>Primero, inicie sesión.</li>
+                    <ol type="a">
+                        <li>Cree un usuario y contraseña.</li>
+                        <li>Si ya creó un usuario, ingrese sus credenciales.</li>
+                    </ol>
+                    <li>Posteriormente, podrá reservar la mesa.</li>
+                </ol>
+
+                <label for="idUsuario">Usuario: </label>
+                <input type="text" class="form-control" id="idUsuario">
+                <br>
+                <label for="idContra">Contraseña: </label>
+                <input type="password" class="form-control" id="idContra">
+                <br>
+            <button type="button" class="btn btn-success" id="btnRegistro">Iniciar Sesión</button>
+
+            </form>
+
+
+            <div id="sub_Mesas">
+                <p class="text-center display-6">Disposición de mesas</p>
 
                 <div id="mesas">
-                    <div class="mesa_disp"><p>Mesa 1</p></div>
-                    <div class="mesa_disp"><p>Mesa 2</p></div>
-                    <div class="mesa_disp"><p>Mesa 3</p></div>
-                    <div class="mesa_disp"><p>Mesa 4</p></div>
+                    <div class="mesa_disp">
+                        <p>Mesa 1</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 2</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 3</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 4</p>
+                    </div>
 
-                    <div class="mesa_disp"><p>Mesa 5</p></div>
-                    <div class="mesa_disp"><p>Mesa 6</p></div>
-                    <div class="mesa_disp"><p>Mesa 7</p></div>
-                    <div class="mesa_disp"><p>Mesa 8</p></div>
+                    <div class="mesa_disp">
+                        <p>Mesa 5</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 6</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 7</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 8</p>
+                    </div>
 
-                    <div class="mesa_disp"><p>Mesa 9</p></div>
-                    <div class="mesa_disp"><p>Mesa 10</p></div>
-                    <div class="mesa_disp"><p>Mesa 11</p></div>
-                    <div class="mesa_disp"><p>Mesa 12</p></div>
+                    <div class="mesa_disp">
+                        <p>Mesa 9</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 10</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 11</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 12</p>
+                    </div>
 
-                    <div class="mesa_disp"><p>Mesa 13</p></div>
-                    <div class="mesa_disp"><p>Mesa 14</p></div>
-                    <div class="mesa_disp"><p>Mesa 15</p></div>
-                    <div class="mesa_disp"><p>Mesa 16</p></div>
+                    <div class="mesa_disp">
+                        <p>Mesa 13</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 14</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 15</p>
+                    </div>
+                    <div class="mesa_disp">
+                        <p>Mesa 16</p>
+                    </div>
 
                 </div>
-            </form>
+            </div>
+
+
         </div>
         <!--Footer-->
         <footer>
@@ -103,13 +155,14 @@
                     <div class="col-12">
                         <hr class="lightDerechos">
                         <h5>¡Gracias por visitar nuestra pagina!</h5>
-                        <a target="_blank" href="https://icons8.com/icon/20405/sombrero-de-chef">Sombrero de chef</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                        <a target="_blank" href="https://icons8.com/icon/20405/sombrero-de-chef">Sombrero de chef</a>
+                        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
                     </div>
                 </div>
             </div>
         </footer>
-</body>
 
-</html>
+        <script src="../js/Funcionamiento.js"></script>
 </body>
 </html>
+
