@@ -80,16 +80,24 @@ icono.addEventListener("click", ()=>{
 })
 
 function obtenerTasa(){
-
+//Validacion 
     var selO = document.getElementById("selOrigen").value;
     var selD = document.getElementById("selDestino").value;
+    var cantidad = document.getElementById("cantidad").value;
 
     if (selO == selD) 
     {
         alert('¡No puede hacer conversión con la misma moneda!');
         return;
+    } else {
+            if (cantidad < 0)
+            {
+                alert('¡No se pueden ingresar números negativos!')
+                return;
+            }
     }
-    
+
+//
     const monto = document.querySelector("input[type='number']");
     const tasaIntercambioTxt = document.querySelector("form .exchange-rate");
     let montoValue = monto.value;
