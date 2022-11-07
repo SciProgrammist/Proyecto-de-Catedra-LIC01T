@@ -37,7 +37,7 @@ function Guardar()
     sessionStorage.setItem('listD', JSON.stringify(destino));
     sessionStorage.setItem('imgB', JSON.stringify(imgBase));
     sessionStorage.setItem('imgD', JSON.stringify(imgDest));
-    //pensanding..............
+    
     pasarValoresSelects(imgBase, imgDest);
     alert('Las monedas por defecto se han guardado correctamente.')
 }
@@ -83,3 +83,4 @@ function pasarValoresSelects(srcImg1, srcImg2){
         document.getElementById("imgDestino").src = srcImg2;
     } 
 }
+
