@@ -1,3 +1,4 @@
+
 const listaPaisesSel = document.querySelectorAll("form select"),
 deMoneda = document.querySelector(".from select"),
 aMoneda = document.querySelector(".to select"),
@@ -65,6 +66,7 @@ window.addEventListener("load", ()=>{
 botonConvertir.addEventListener("click", e =>{
     e.preventDefault();
     obtenerTasa();
+    Historial();
 });
 
 const icono = document.querySelector("form .icon");
@@ -110,9 +112,41 @@ function obtenerTasa(){
         let tasaInter = result.conversion_rates[aMoneda.value];
         let valorCambio = (montoValue * tasaInter).toFixed(2);
         tasaIntercambioTxt.innerText = `${montoValue} ${deMoneda.value} = ${valorCambio} ${aMoneda.value}`;
+        //Agregamos codigo para creacion de historial
+        
+        elementoPadre=document.querySelector('.contenedor');
+ let Origen = document.getElementById('selOrigen').value;
+    let valo=document.querySelector("input[type='number']").value;
+    let Destino = document.getElementById('selDestino').value;
+    
+    
+    
+    const RowAndCols = document.createElement('p');
+    //con estas dos lineas vamos a crear una fila de dos clumnas
+    RowAndCols.innerHTML = '<div class="row"><div class="col">Se convirtieron '+valo+''+Origen+'</div><div class="col">a '+valorCambio+'  '+Destino+'</div></div>';
+    elementoPadre.appendChild(RowAndCols);
+  
+      
     }).catch(() =>{
         tasaIntercambioTxt.innerText = "No se pudo obtener la tasa desde el API";
     });
 
+}
+
+function Historial()
+{ 
+  
+    
+  elementoPadre=document.querySelector('.contenedor');
+ let Origen = document.getElementById('selOrigen').value;
+    let valo=document.querySelector("input[type='number']").value;
+    let Destino = document.getElementById('selDestino').value;
+    
+    
+    
+    const RowAndCols = document.createElement('p');
+    //con estas dos lineas vamos a crear una fila de dos clumnas
+    RowAndCols.innerHTML = '<div class="row"><div class="col">Se convirtieron '+valo+''+Origen+'</div><div class="col">a'+conver+'  '+Destino+'</div></div>';
+    elementoPadre.appendChild(RowAndCols);
 }
 
