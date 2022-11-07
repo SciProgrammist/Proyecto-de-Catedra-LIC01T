@@ -87,6 +87,7 @@ p.finalp {
     text-align: justify;
 }
 
+
 .navbar {
     padding: .8rem;
 }
@@ -110,19 +111,20 @@ p.finalp {
     transform: translateY(-50%);
 }
 
-.carousel-caption h2 {
-    font-size: 200%;
+.carousel-caption h1 {
+    font-size: 300%;
     text-transform: uppercase;
-    text-shadow: 1px 1px 10px #000;
+    text-shadow: 1px 1px 10px #FF8C00;
     font-weight: bold;
-    background: violet;
-
+    
+    
 }
 
 .carousel-caption h3 {
-    font-size: 100%;
-    font-weight: 500;
+    font-size: 150%;
+    font-weight: 450;
     background-color: darkorange;
+    opacity: 0.9;
     padding-bottom: 1 rem;
 }
 
